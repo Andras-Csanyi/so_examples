@@ -23,7 +23,7 @@ public class CommandTests {
     public void test() {
         
         ShellTestClient.NonInteractiveShellSession session = shellTestClient
-            .nonInterative("whatever")
+            .nonInterative("help")
             .run();
         
         await().atMost(2, TimeUnit.SECONDS).untilAsserted(() -> {
